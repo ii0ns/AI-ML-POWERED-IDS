@@ -295,9 +295,8 @@ Live packet capture requires administrator/root privileges and (on Windows) the 
 
 ## Contributors
 
-| Name |
-| Younes Sahraoui |
-| Oussama Zayane |
+[Younes Sahraoui](https://github.com/ii0ns)
+[Oussama Zayane](https://github.com/ozyns)
 
 ---
 
