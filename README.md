@@ -259,40 +259,6 @@ Opens the dashboard in your default browser at `http://localhost:8501`.
 
 ---
 
-## Example Outputs
-
-**Figure 1:** [Insert — Dataset Overview: class distribution bar charts for training and test sets]
-
-**Figure 2:** [Insert — Model Comparison: grouped bar chart of Accuracy / Precision / Recall / F1 for all three models]
-
-**Figure 3:** [Insert — Confusion Matrix for Model C (OHE + SMOTE)]
-
-**Figure 4:** [Insert — SHAP Global Feature Importance: top 25 features ranked by mean |SHAP| value]
-
-**Figure 5:** [Insert — SHAP Local Explanation: per-sample waterfall showing features pushing toward attack vs. normal]
-
-**Figure 6:** [Insert — Live Detection: capture log table with red (attack), yellow (uncertain), and white (normal) rows]
-
-**Figure 7:** [Insert — PCAP Analysis: pie chart of predicted traffic categories from an uploaded file]
-
----
-
-## Challenges and Limitations
-
-### Domain Shift
-The models were trained exclusively on UNSW-NB15 lab traffic from 2015. Live internet traffic from modern networks has different statistical characteristics, resulting in lower model confidence on real-world flows. This is a fundamental limitation of any model trained on a static benchmark dataset.
-
-### Feature Extraction Approximation
-Live feature extraction via Scapy approximates the UNSW-NB15 feature set. Application-layer features (`trans_depth`, `response_body_len`, `is_ftp_login`, `ct_ftp_cmd`, `ct_flw_http_mthd`) cannot be recovered from raw packets and are set to zero, which shifts the feature distribution away from training data.
-
-### Class Imbalance
-Several attack classes are heavily underrepresented in the raw dataset (Worms: 130 samples, Shellcode: 1,133, Backdoor: 1,746). SMOTE oversampling mitigates this, but recall on these classes remains lower than for high-frequency classes such as Generic or Exploits.
-
-### Privilege Requirements
-Live packet capture requires administrator/root privileges and (on Windows) the Npcap driver.
-
----
-
 ## Contributors
 
 > [Younes Sahraoui](https://github.com/ii0ns)<br>
