@@ -266,18 +266,14 @@ Opens the dashboard in your default browser at `http://localhost:8501`.
 
 ---
 
-## 📄 License
-
-This project is licensed under the :contentReference[oaicite:1]{index=1}.
+## License
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-This means you are free to:
-- Use the code
-- Modify it
-- Share it
+This project is licensed under the MIT License.
 
-Under the conditions of the license.
+You are free to use, modify, and distribute it under the terms of the MIT License.
+
 
 ### Dataset
 The UNSW-NB15 dataset is **not included** in this repository and is subject to its own terms:
