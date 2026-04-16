@@ -295,9 +295,11 @@ Live packet capture requires administrator/root privileges and (on Windows) the 
 
 ## Contributors
 
-| Name | Role |
-|---|---|
-| [Author Name] | Project lead — data engineering, model training, dashboard development |
+| Name |
+|---|
+| Younes Sahraoui |
+|---|
+| Oussama Zayane |
 
 ---
 
