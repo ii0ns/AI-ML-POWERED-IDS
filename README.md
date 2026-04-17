@@ -14,8 +14,6 @@ A machine-learning-based Network Intrusion Detection System trained on the **UNS
 - [Dashboard Sections](#dashboard-sections)
 - [Technologies Used](#technologies-used)
 - [Dataset](#dataset)
-- [Example Outputs](#example-outputs)
-- [Challenges and Limitations](#challenges-and-limitations)
 - [Contributors](#contributors)
 - [License](#license)
 
